@@ -1,1 +1,1 @@
-../1960s.github.io/README.md
+../1960s.github.io/blob/main/README.md
