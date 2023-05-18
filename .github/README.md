@@ -1,1 +1,0 @@
-../1960s.github.io/blob/main/README.md
