@@ -27,3 +27,13 @@
 <a href="#">    <li>Music Generation</li></a>
   -->
 </ul>
+
+```mermaid
+graph LR
+RESEARCH---
+DESIGN---
+BUILD---
+OPERATE
+```
+
+
