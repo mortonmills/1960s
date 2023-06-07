@@ -12,8 +12,8 @@
 </ul>
  <li>Code Editor</li>
 <ul>
-<a href="https://1960s.github.io/codemirrortest/">    <li>Devsand6</li></a>
-<a href="https://1960s.github.io/devsand">    <li>Devsand5</li></a>
+<a href="https://1960s.github.io/editor-devsand6">    <li>Devsand6</li></a>
+<a href="https://1960s.github.io/editor-devsand5">    <li>Devsand5</li></a>
   <!--
 <a href="#">    <li>Monaco</li></a>
   -->
