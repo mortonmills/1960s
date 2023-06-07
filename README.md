@@ -42,7 +42,7 @@ mixcraft
 
 Future Skills
 		python
-		typescript/
+		typescript
 		c
 		sql
 		c++
