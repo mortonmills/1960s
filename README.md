@@ -27,76 +27,28 @@
 <a href="#">    <li>Music Generation</li></a>
   -->
 </ul>
+<hr>
 
-```mermaid
-graph LR
-RESEARCH---
-DESIGN---
-BUILD---
-OPERATE
-```
+Skills
+javascript
+html
+css
+c
 
-```mermaid
-mindmap
-root((FILE))
-    PROTOYPES 
-        mock ups of designs
-        project sources and bookmarks
-        issues and features
-        naming conventions
-    PROJECT DOCS
-        tasklist includes features and problems/bugs with solutions
-        outlook then to onedrive for text concept file
-        prose documentation, and pseudo code
-        browser bookmarks include page location sources file
-        text readme from bookmarks
-        image drawio/mermaid project overview from project file
-        video animation three js, P5, or d3manim or blender
-        jsdoc
+midi
+git
+github
+mixcraft
 
-```
+Future Skills
+		python
+		typescript/
+		c
+		sql
+		c++
+		rust
+		haskell
 
-```mermaid
-flowchart TB
-WORKFLOW
-
-subgraph WORKFLOW
-direction TB
-OUTLOOK---
-MERMAID/DRAWIO---
-DEVSAND/CODEMIRROR---
-VSCODE---
-GIT---
-GITHUB
-end
-```
-
-
-
-```mermaid
-mindmap
-root((PORTFOLIO))
-    DEVSAND
-        SNIPPET LIBRARY
-        CONVERTER
-        CONSOLE
-        FILE CONVERSION /CSV/JSON/
-
-    MUSIC
-        RHYTHM/MUSIC TAGGING
-        MIDI GENERATOR
-        AUDIO GENERATOR
-
-    MANAGER
-        TASK LIST
-        BOOKMARK
-        SNIPPET
-        PROJECT
-
-```
-<!--
-
-[DEVICON](https://devicon.dev/)
-
--->
-
+    reaper
+    cubase
+    logic pro
