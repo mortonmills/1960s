@@ -41,14 +41,14 @@ github
 mixcraft
 
 Future Skills
-		python
-		typescript
-		c
-		sql
-		c++
-		rust
-		haskell
+python
+typescript
+c
+sql
+cpp
+rust
+haskell
 
-    reaper
-    cubase
-    logic pro
+reaper
+cubase
+logic pro
