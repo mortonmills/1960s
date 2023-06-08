@@ -40,6 +40,7 @@ git
 github
 mixcraft
 
+<!-- 
 Future Skills
 python
 typescript
@@ -51,4 +52,6 @@ haskell
 
 reaper
 cubase
-logic pro
+logic pro 
+-->
+
