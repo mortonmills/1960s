@@ -8,16 +8,21 @@
 <a href="#">    <li>Project Manager</li></a>
 <a href="#">    <li>Task Manager</li></a>
   -->
-<a href="https://1960s.github.io/manager-snippets/">    <li>Snippets Manager</li></a>
-<a href="https://1960s.github.io/manager-bookmarks/">    <li>Bookmarks Manager</li></a>
-<a href="https://1960s.github.io/manager-snippets/text-converter.html">    <li>Text Converter</li></a>
+<a href="https://1960s.github.io/manager-snippets/">    
+<li>Snippets Manager</li></a>
+<a href="https://1960s.github.io/manager-bookmarks/">    
+<li>Bookmarks Manager</li></a>
+<a href="https://1960s.github.io/manager-snippets/text-converter.html">    
+<li>Text Converter</li></a>
 
 </ul>
 
  <li>Code Editor</li>
 <ul>
-<a href="https://1960s.github.io/editor-devsand6">    <li>Devsand6</li></a>
-<a href="https://1960s.github.io/editor-devsand5">    <li>Devsand5</li></a>
+<a href="https://1960s.github.io/editor-devsand6">    
+<li>Devsand6</li></a>
+<a href="https://1960s.github.io/editor-devsand5">    
+<li>Devsand5</li></a>
   <!--
 <a href="#">    <li>Monaco</li></a>
   -->
@@ -25,12 +30,16 @@
 
 <li>Music</li>
 <ul>
-<a href="https://1960s.github.io/midi-text">    <li>midi</li></a>
+<a href="https://1960s.github.io/midi-text">    
+<li>midi</li></a>
+<a href="https://1960s.github.io/music-youtube-api/youtube-maker">    
+<li>Get Youtube Playlist Data</li></a>
 </ul>
 
 <li>Archived</li>
 <ul>
-<a href="https://1960s.github.io/diydomebuilders/">    <li>diydomebuilders</li></a>
+<a href="https://1960s.github.io/diydomebuilders/">    
+<li>diydomebuilders</li></a>
 </ul>
 
 </ul>
