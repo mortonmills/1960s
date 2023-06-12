@@ -20,14 +20,20 @@
 </ul>
 <li>Music</li>
 <ul>
-  <!--
-<a href="#">    <li>Rhythm Tagging System</li></a>
-<a href="#">    <li>Tonal Tagging System</li></a>
-<a href="#">    <li>Text <=> Midi Editor (Dawless)</li></a>
-<a href="#">    <li>Music Generation</li></a>
-  -->
+<a href="https://1960s.github.io/midi-text">    <li>midi</li></a>
+</ul>
+
+<ul>
+<li>Archived</li>
+<ul>
+<a href="https://1960s.github.io/diydomebuilders/">    <li>diydomebuilders</li></a>
+</ul>
+
 </ul>
 <hr>
+
+
+
 
 <h3 align="left">Current Languages and Tools:</h3>
 <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> 
