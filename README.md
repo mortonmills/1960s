@@ -1,6 +1,7 @@
 <h2>PROJECTS</h2>
 
 <ul>
+
 <li>Manager Suite</li>
 <ul>
  <!--
@@ -10,6 +11,7 @@
 <a href="https://1960s.github.io/manager-snippets/">    <li>Snippets Manager</li></a>
 <a href="https://1960s.github.io/manager-bookmarks/">    <li>Bookmarks Manager</li></a>
 </ul>
+
  <li>Code Editor</li>
 <ul>
 <a href="https://1960s.github.io/editor-devsand6">    <li>Devsand6</li></a>
@@ -18,14 +20,13 @@
 <a href="#">    <li>Monaco</li></a>
   -->
 </ul>
+
 <li>Music</li>
 <ul>
 <a href="https://1960s.github.io/midi-text">    <li>midi</li></a>
 </ul>
 
-<ul>
 <li>Archived</li>
-</ul>
 <ul>
 <a href="https://1960s.github.io/diydomebuilders/">    <li>diydomebuilders</li></a>
 </ul>
