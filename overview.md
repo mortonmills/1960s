@@ -1,68 +1,53 @@
-```mermaid
-mindmap
-root((PORTFOLIO))
-    EDITOR
-        DEVSAND5
-        DEVSAND6
-            SNIPPET LIBRARY
-            CONVERTER
-            CONSOLE
-            FILE CONVERSION /CSV/JSON/
-
-    MUSIC
-        MUSIC TAGGING
-            RHYTHM
-            TONAL
-            VELOCITY
-        MIDI GENERATOR
-        AUDIO GENERATOR
-
-    MANAGER
-        TASK LIST
-        BOOKMARK
-        SNIPPET
-        PROJECT
-
-```
-
-<hr>
-
-
-
-
-
-```mermaid
-graph LR
-RESEARCH---
-DESIGN---
-BUILD---
-OPERATE
-```
 
 ```mermaid
 mindmap
-root((WORKFLOW))
-    PROTOYPES 
-        mock ups of designs devsand/codemirror
-        project sources and bookmarks
-        issues and features
-        naming conventions
-    PROJECT DOCS
-        git
-        github/vscode
-        tasklist includes features and problems/bugs with solutions
-        outlook then to onedrive for text concept file
-        prose documentation, and pseudo code
-        browser bookmarks include page location sources file
-        text readme from bookmarks
-        image drawio/mermaid project overview from project file
-        video animation three js, P5, or d3manim or blender
-        jsdoc
-
+root((FOLDER))
+    RESEARCH
+        sources
+            bookmarks/websites
+            books
+            videos
+    DESIGN
+        README
+            diagrams
+            images
+        tasklist
+        prototypes
+            images
+            code experiments
+        docs
+            issues
+            features
+            naming
+    BUILD
+        images
+        scripts
+        styles
+    OPERATE
+            script
+                intro
+                explanation
+                    pseudocode
+                    images
+                    links
+                    camera shots
+                    animations 
+                    audio
+                    analogies
+                    diagrams
+                conclusion
+                further reading
 ```
 
-<!--
-
-[DEVICON](https://devicon.dev/)
-
--->
+- start ideas in tasklist file
+  - log issues and features on github after first revision of ideas
+  - script explains making ideas and any solutions to issues encountered
+  - video animation use
+    - three js
+    - P5
+    - d3
+    - manim
+    - blender
+- keep prototypes as well, concept art and mockups
+  - use jsdoc during mockups
+- keep a list of sources in source file, how to easily keep sources

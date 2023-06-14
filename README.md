@@ -30,8 +30,6 @@
 
 <li>Music</li>
 <ul>
-<a href="https://1960s.github.io/midi-text">    
-<li>midi</li></a>
 <a href="https://1960s.github.io/music-youtube-api/youtube-maker">    
 <li>Get Youtube Playlist Data</li></a>
 </ul>
@@ -75,6 +73,9 @@
 <a href="https://www.blender.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/blender/blender-original.svg" alt="blender" width="40" height="40"/> </a> 
 <a href="https://www.cubase.org/" target="_blank" rel="noreferrer"> <img src="images/cubase-logo.svg" alt="cubase" width="40" height="40"/> </a> 
 <a href="https://www.reaper.org/" target="_blank" rel="noreferrer"> <img src="images/reaper-icon.png" alt="reaper" width="40" height="40"/> </a> 
+
+
+<hr>
 
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=1960s&show_icons=true&locale=en&layout=compact" alt="1960s" /></p>
