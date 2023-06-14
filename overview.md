@@ -28,23 +28,7 @@ root((PORTFOLIO))
 <hr>
 
 
-```mermaid
-mindmap
-root((MUSIC ROADMAP))
-    midi
-        procedural generation
-        Setup number patterns in tagging system
-        milestone
-        reproduce midi instrumental tack based on rules
-        ml generation
-    audio
-        procedural generation
-        ml generation
-        milestone
-        reproduce audio with vocals of original song
-```
 
-<hr>
 
 
 ```mermaid
