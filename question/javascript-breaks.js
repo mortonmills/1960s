@@ -65,3 +65,28 @@ the base case is similar to condition
       return multiply(arr, n - 1) * arr[n - 1]; 
     }
   }
+  
+  
+  COMMON MISTAKE
+  PROBLEM
+was trying to use to bind an event listener with the following
+why won't this work?
+function hideMe() {
+    if (document.getElementById("yu").style.display != "none"
+    ) {
+        document.getElementById("yu").style.display = "block"
+    }
+    else if (document.getElementById("yu").style.display != "block"
+    ) {
+        document.getElementById("yu").style.display = "none"
+    }
+}
+SOLUTION
+function showMe() {
+    if (document.getElementById("test").style.display == "block") {
+        document.getElementById("test").style.display = "none"
+    }
+    else {
+        document.getElementById("test").style.display = "block"
+    }
+}

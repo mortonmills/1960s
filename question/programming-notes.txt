@@ -9,9 +9,9 @@ booleans
 
 
 Simple to Complex Data
-Booleans
-Numbers
-Strings
+Booleans 2 possibilitieys
+Numbers depending on base 
+Strings 26 base more than decimal
 
 data as ingredients, matter, clay
 programming as recipe, form, sculpt
