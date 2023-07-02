@@ -1,85 +1,81 @@
+<h1>EXPLANATION GENERATOR</h1>
+<textarea hidden id="headings">
+  Analogy, provide opposite analogy, Grand scheme relationship
+  Diagram and Animation, Visualization Stage
+  Explanation
+  Plain English
+  Technical, converse, not or opposite
+  Extreme Example
+  Summary
+  </textarea>
 
-
-<h1>ADEPT GENERATOR</h1>
-
-have selection page for generating content like readme but for ideas in script, insert image analogy techinical explanation
-<br>
-<h2>Analogy</h2>
-relationship type hierarchy part has is a
-<br>
-Relationship: <select id="groups" name="groups">
-  <optgroup label="fruits">
-    <option>type (is a), include parents, children, and siblings, ex lion  type of feline parent, siblings tiger, jaguar, leopard, children african lion, asian lion  </option>
-    <option selected>Part (has a)</option>
-    <option>Lemon</option>
-  </optgroup>
-  <optgroup label="vegetables">
-    <option>Carrot</option>
-    <option>Eggplant</option>
-    <option>Potato</option>
-  </optgroup>
-</select>
-<br>
-Concrete Example: <select id="groups" name="groups">
-  <optgroup label="fruits">
-    <option>Fruits</option>
-    <option selected >Martial Arts</option>
-    <option>Cars</option>
-  </optgroup>
-  <optgroup label="vegetables">
-<option>fruits/food/milkshake</option>
-<option>animals</option>
-<option>colors</option>
-<option>martial arts</option>
-<option>weapons</option>
-<option>cars</option>
-  </optgroup>
-</select>
-
-
-
-<br>
-<h2>Diagram and Animation, Visualization Stage</h2>
-<br>
-<h2>Explanation</h2>
-<br>
-<h2>Plain English</h2>
-<br>
-<h2>Technical</h2>:
-<br>
-
-<span id="test"></span>
+<textarea hidden id="analogyGroup">
+analogy
+  physics
+    light
+    colors
+    heat
+    mechanics
+    electric
+    gravity
+    sound
+  chemistry
+    states of matter
+    atoms
+    planets
+    oceans
+    clouds
+  biology
+    minerals
+    plants
+    animals
+  sociology
+    king
+    captain
+  technology
+    house
+    martial arts
+    weapons
+    cars</textarea>
+<textarea hidden id="teg">
+analogy
+  gold
+    bright
+      red
+      blue
+        light
+        dark
+          sea
+          ocean
+    shiny
+  silver
+    dull
+  </textarea>
 
 <script>
-//console.time()
-//console.timeEnd()
-console.clear()
-console.log("test")
+  let headings = document.getElementById("headings").value
+  let analogyGroup = document.getElementById("analogyGroup").value
+  let teg = document.getElementById("teg").value
+  let tab = 2
+  const re = new RegExp(`\\n${((" ").repeat(tab))}(?=\\w)`)
+  
 
-  function test(){
+  function strToArr(str, tab = 2){
 
-    let test = document.getElementById("test")
-    
-    for (let i = 0; i < 10; i++){
-    }
+const regex = new RegExp(`\\n${((" ").repeat(tab))}(?=\\w)`)
 
-
-
-
-
-
-
-
-
-
-
-
+if (tab > 6){
+  return 
+}
+else {
+let arr = str.split(regex)
+return arr.map(x=>strToArr(x, tab + 2))
+}
 
 
   }
-test()
+
+let content = []
+headings.split("\n").forEach(x=> content.push(`<h2>${x}</h2>`))
+document.body.innerHTML = content.join("\n")
 </script>
-                
-                
-                
-                
