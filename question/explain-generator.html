@@ -41,41 +41,75 @@ analogy
 analogy
   gold
     bright
+    shiny
       red
       blue
         light
         dark
           sea
           ocean
-    shiny
   silver
     dull
   </textarea>
 
+
+
 <script>
+
+
+
+  // let teg = document.getElementById("teg").value
+  // const re = new RegExp(`\\n${((" ").repeat(tab))}(?=\\w)`)
+  // let arr = teg.split(re)
+  // arr[1] = arr.filter((x,i)=> i != 0)
+  // (2) ['gold\n bright\n shiny', 'silver\n dull\n ']
+
+  function sto(str) {
+    if (str.split(re) == 1) {
+      return str
+    }
+    return
+  }
+
+
+
   let headings = document.getElementById("headings").value
   let analogyGroup = document.getElementById("analogyGroup").value
   let teg = document.getElementById("teg").value
   let tab = 2
   const re = new RegExp(`\\n${((" ").repeat(tab))}(?=\\w)`)
-  
 
-  function strToArr(str, tab = 2){
 
-const regex = new RegExp(`\\n${((" ").repeat(tab))}(?=\\w)`)
+  function strToArr(str, tab = 2) {
 
-if (tab > 6){
-  return 
-}
-else {
-let arr = str.split(regex)
-return arr.map(x=>strToArr(x, tab + 2))
-}
+    const regex = new RegExp(`\\n${((" ").repeat(tab))}(?=\\w)`)
 
+    if (str.split(regex).length == 1 ) {
+      return str
+    }
+    else {
+      let arr = str.split(regex)
+
+      return arr.map(x => strToArr(x, tab + 2))
+    }
 
   }
 
-let content = []
-headings.split("\n").forEach(x=> content.push(`<h2>${x}</h2>`))
-document.body.innerHTML = content.join("\n")
+  function arrToObj(arr) {
+
+if (!arr.some(x => Array.isArray(x))) {
+  return Object.fromEntries([arr])
+}
+else {
+  return arr.map(x => arrToObj(x))
+}
+
+}
+
+  let keg = strToArr(teg)
+  let deg = arrToObj(keg)
+
+  let content = []
+  headings.split("\n").forEach(x => content.push(`<h2>${x}</h2>`))
+  document.body.innerHTML = content.join("\n")
 </script>
