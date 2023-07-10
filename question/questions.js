@@ -31,6 +31,7 @@ INTRO
 	fighting a natural condition, greater opposition, greater maintenance required
 
 ---
+give many examples of each relationship type, abstract to concrete
 <textarea hidden id="relationship">
 hierarchy (is a), parent ,child, and sibilings
 part (has a)
@@ -39,6 +40,7 @@ tool-maker, tool
 technique-maker, technique
 potential or actual, good or service
 form and content
+abstract to concrete
 </textarea>
 
 
