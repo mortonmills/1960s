@@ -44,7 +44,10 @@ abstract to concrete
 </textarea>
 
 
-
+Structure project as
+Why goal purpose telos
+How
+Who what when where
 
 
 
