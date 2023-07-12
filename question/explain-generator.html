@@ -82,9 +82,10 @@ analogy
 
   function strToArr(str, tab = 2) {
 
+    // \n  (if letter)
     const regex = new RegExp(`\\n${((" ").repeat(tab))}(?=\\w)`)
 
-    if (str.split(regex).length == 1 ) {
+    if (str.split(regex).length == 1) {
       return str
     }
     else {
@@ -95,16 +96,28 @@ analogy
 
   }
 
+
+  // Object.fromEntries([arr])
+  // [[a[0],[a.slice(1)]]]
+
   function arrToObj(arr) {
 
-if (!arr.some(x => Array.isArray(x))) {
-  return Object.fromEntries([arr])
-}
-else {
-  return arr.map(x => arrToObj(x))
-}
+    if (Array.isArray(arr) && !arr.some(x => Array.isArray(x))) {
+      return Object.fromEntries([arr])
+    }
+    else {
+      return Object.fromEntries([
+        [arr[0],
+        arr
+          .filter((x, i) => i != 0)
+          .map(x => Array.isArray(x) ? arrToObj(x) : x)]
+      ])
+    }
 
-}
+  }
+
+  // Object.fromEntries()
+  // .map((x,i,a) => Array.isArray(x) ? arrToObj(x) : x)
 
   let keg = strToArr(teg)
   let deg = arrToObj(keg)
