@@ -67,6 +67,11 @@ Expert
 let var const and object properties
 all variables
 
+Problems with English language
+No letter C, k and s do the same
+no capital letters, have a symbol at front of word, $adam
+also takes up unnecessary space in ASCII 
+
 
 For turn based games
 time, space, skills
