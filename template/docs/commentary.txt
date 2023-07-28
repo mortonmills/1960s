@@ -1,5 +1,0 @@
-analogy	what it's like
-diagram	visualization
-example	hands-on experience
-plain english	everday words
-technical definition	formal details W3C MDN

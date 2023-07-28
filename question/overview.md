@@ -11,7 +11,7 @@ root((FOLDER))
         README
             diagrams
             images
-        tasklist
+        tasklist problem breakdown milestones
         prototypes
             images
             code experiments
