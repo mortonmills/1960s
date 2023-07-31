@@ -1,0 +1,465 @@
+
+<input type="file" id="fileInput" multiple>
+
+<button id="fileHTML" onclick="handleFiles(fileInput, webPageHTML)">Update to HTML</button>
+<button id="fileJS" onclick="handleFiles(fileInput, webPageJS)">Update to Javascript</button>
+<button id="fileCSV" onclick="">Update to CSV</button>
+
+<button id="fileCSV" onclick="">CSV to HTML</button>
+
+<script>
+
+   let fileInput = document.getElementById("fileInput")
+
+
+//HTML SECTION
+
+  function navbarMaker(categories, pages){
+    let nav = []
+
+    categories = arrCleaner(categories.split("\n"))
+    pages = arrCleaner(pages.split("\n"))
+
+
+    nav.push(`
+<hr>
+<div class="navbar">
+`)
+
+
+    categories.forEach(function (el) {
+
+      if (el) nav.push(`<div class="dropdown">
+<button class="dropbtn">${el}</button>
+<div class="dropdown-content">`)
+
+      pages.forEach(function (el2, i) {
+        let pear = el2.split("\t")
+
+        if (el == pear[0]) {
+          if (el2)  nav.push(`<a href="../html/${pear[2]}.html">${pear[1]}</a>`)
+        }
+      })
+
+      nav.push(`
+  </div>
+  </div>
+`)
+
+    })
+    nav.push(`
+  </div>
+<hr>
+`)
+
+    return nav.join("\n")
+
+  }
+
+
+
+  let navCategories = `
+Library
+Design
+Build
+Offgrid
+Calculators
+`
+
+  let navPages = `
+Library	About/Contact	aboutcontact
+Library	diydomebuilders+	diydomebuilders
+Library	Further Reading	furtherreading
+Design	What's the Best Shape?	whatsthebestshape
+Design	Intro to Geodesics	introtogeodesics
+Design	Choosing A Design	frame
+Design	Covering/Add-Ons	covering
+Build	Buying Conduit	buyingconduit
+Build	Making Struts	makingstruts
+Build	Covering2	covering2
+Build	Assembly	anchoring
+Offgrid	Going Offgrid	goingoffgrid
+Calculators	1V	1v
+Calculators	2V	2v
+Calculators	3V	3v
+Calculators	4V	4v
+`
+
+
+
+
+
+  function webPageHTML(webPageTitle, mainHTML){
+
+    let webPages = []
+
+
+
+    let htmlStart = `
+<!doctype html>
+<html lang="en">
+`
+
+    let headContent = `
+<!--split here-->
+<head>
+<!--page title-->
+<title>diydomebuilders</title>
+
+<!--scaling definition allows page to fit to mobile devices and smaller browser windows-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--site info search engine-->
+<meta charset="utf-8"> 
+<meta name="author" content="diydomebuilders">
+<meta name="description" content="A site made for domebuilding projects. Includes tutorials & calculators for building a dome, a covering, and living offgrid.">
+
+
+<link rel="stylesheet" href="../site.css">
+  </head>
+`
+
+    let bodyStart = `
+<!--split here-->
+<body>
+`
+
+    let headerContent = `
+<!--split here-->
+<header>
+<a href="../index.html">
+<h1>diydomebuilders <img src="../images/diyicon.png"></h1>
+  </a>
+  </header>
+<hr>`
+
+    let navContent = `
+<!--split here-->
+${navbarMaker(navCategories, navPages)}
+`
+    let mainContent = `
+<!--split here-->
+<hr>
+<main>
+<h1>Heading1</h1>
+<div class="datemade">created January 20, 2020 
+<b>(updated January 20, 2020)</b>
+  </div>
+
+${mainHTML}
+
+  </main>
+`
+
+    let footerContent = `
+<!--split here-->
+<hr>
+
+<br>
+`
+
+    let bodyEnd = `
+<!--split here-->
+  </body>
+`
+
+    let htmlEnd = `
+<!--split here-->
+  </html>
+`
+
+    //can put loop here is vars ar in array
+    webPages.push(htmlStart)
+    webPages.push(headContent)
+    webPages.push(bodyStart)
+
+    webPages.push(headerContent)
+    webPages.push(navContent)
+    webPages.push(mainContent)
+    webPages.push(footerContent)
+
+    webPages.push(bodyEnd)
+    webPages.push(htmlEnd)
+
+
+
+    let page = webPages.join("\n")
+
+
+
+
+    //can only output 10 files max
+    //saveTextAsFile("index", page)
+    
+
+	
+
+const repeatCount = 20;
+
+    
+
+
+      saveTextAsFile(webPageTitle, page);
+
+
+
+  }
+
+//JS SECTION
+
+
+  function webPageJS(webPageTitle, mainHTML){
+
+    let webPages = []
+
+
+    let webPageScripts = `
+<!doctype html>
+<head id="head">
+<script src="../head.js"><\/script>
+  </head>
+
+<script src="../cms.js"><\/script>
+
+<header id="header">
+<script src="../header.js"><\/script>
+  </header>
+
+<nav id="navbar">
+<script src="../navbar.js"><\/script>
+  </nav>
+`
+
+
+
+    let mainContent = `
+<!--split here-->
+
+${mainHTML}
+
+`
+
+    let footerContent = `
+<!--split here-->
+
+<footer id="footer">
+<script src="../footer.js"><\/script>
+  </footer>
+`
+
+
+    //can put loop here is vars ar in array
+    webPages.push(webPageScripts)
+    webPages.push(mainContent)
+    webPages.push(footerContent)
+
+
+    let page = webPages.join("\n")
+
+
+
+    //can only output 10 files max
+    //saveTextAsFile("index", page)
+saveTextAsFile(webPageTitle, page);
+
+
+  }
+
+//CSV SECTION
+
+//CSV to HTML SECTION
+
+  function arrCleaner(arr){
+    //this cleans up the front and back of string with blank data
+    if(arr[0] == "") arr.shift()
+    if(arr[arr.length - 1] == "") arr.pop()
+    return arr
+  }
+
+
+
+  function htmlStrToCSV(htmlStr){ 
+    let str = `
+${htmlStr}
+`
+    str = str
+      .split("<!--split here-->")
+      .join("\t")
+
+    return str
+  }
+
+
+
+
+  function arrInverter(cvsStr){
+    cvsStr = arrCleaner(cvsStr.split("\n"))
+    let num = 0
+    cvsStr.forEach(function (el, i) {
+      cvsStr[i] = el.split("\t") 
+      //captures the longest arr
+      if (cvsStr[i].length > num) num = cvsStr[i].length
+    })
+
+    let arr = []
+    for (let j = 0; j < num; j++){
+      let arr2 = []
+      for (let k = 0; k < cvsStr.length; k++){
+        arr2.push(cvsStr[k][j])
+      }
+      arr.push(arr2)
+    }
+    return arr
+  }
+
+
+
+
+
+//FILE SAVING
+
+
+
+  function saveTextAsFile(str, contents){      
+    var textToWrite = contents;
+    var textToWrite = textToWrite.replace(/\n/g, "\r\n");
+    var textFileAsBlob = new Blob([textToWrite], {type:'text/plain'});
+    var fileNameToSaveAs = `${str}.html`; //name file here
+
+    var downloadLink = document.createElement("a");
+    downloadLink.download = fileNameToSaveAs;
+    downloadLink.innerHTML = `${str}`;//<--custom change, find out meaning
+
+    window.URL = window.URL || window.webkitURL;
+
+    downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+
+    downloadLink.onclick = destroyClickedElement;
+    downloadLink.style.display = "none";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+
+
+  }
+
+  function destroyClickedElement(event){
+    document.body.removeChild(event.target);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  function handleFiles(input, func) {
+
+    let arr = []
+
+
+    for (let i = 0; i < input.files.length; i++) {
+
+
+
+
+      let reader = new FileReader()
+
+      reader.readAsText(input.files[i])
+
+
+
+      reader.onload = function() {
+
+let arr2 = []
+
+arr2.push(input.files[i].name.replace(/.html/gi, ''))
+arr2.push(reader.result
+    .match(/<main>(.*)<\/main>/gms)[0]
+    .replace(/<\/?main>/gms, ""))
+
+
+        arr.push(arr2)
+
+        console.log(arr)
+
+
+
+        if (i == input.files.length - 1) {
+
+ const repeatCount = 50; //file download limit
+
+for (let j = 0; j < repeatCount; j += 1) {
+  setTimeout(
+    () => {
+      func(arr[j][0], arr[j][1])
+    },
+    j * 200 // Delay download every 200ms
+  );
+}
+
+
+
+
+}
+
+      }
+
+
+
+    }
+
+  }
+
+    
+/*
+
+
+    
+// don't use i as counter variable
+for (let i = 0; i < repeatCount; i += 1) {
+  setTimeout(
+    () => {
+      saveTextAsFile(webPageTitle, page)
+    },
+    i * 200 // Delay download every 200ms
+  );
+}
+
+
+
+
+        if (i == input.files.length - 1) {
+ const repeatCount = 20;
+
+arr.forEach(function (el){func(el[0], el[1])})
+
+for (let i = 0; i < repeatCount; i += 1) {
+  setTimeout(
+    () => {
+      saveTextAsFile(webPageTitle, page)
+    },
+    i * 200 // Delay download every 200ms
+  );
+}
+
+
+
+
+}
+*/
+
+</script>

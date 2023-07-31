@@ -1,0 +1,141 @@
+<style>
+
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+     z-index: 0;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: fixed;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: inline-block;
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown1 {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content1 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown1:hover .dropdown-content1 {
+    display: block;
+  }
+</style>
+
+
+
+<span class="dropdown">
+  <button >Dropdown</button>
+  <span class="dropdown-content">
+    <button>Dropdown</button>
+    <button>Dropdown</button>
+    <span class="dropdown1">
+      <button >Dropdown</button>
+      <span class="dropdown-content1">
+        <button>sdfgsfdg</button><br>
+        <button>sdfgsfdg</button><br>
+        <button>sdfgsfdg</button>
+      </span>
+    </span>
+
+    <span class="dropdown1">
+      <button >Dropdown</button>
+      <span class="dropdown-content1">
+        <button>sdfgwertwer</button><br>
+        <button>sdfgwertwer</button><br>
+        <button>sdfgwertwer</button>
+      </span>
+    </span>
+
+    <button>dhfghdfg</button>
+  </span>
+
+
+
+
+</span>
+
+<textarea rows="20" cols="70" id="stamp"></textarea>
+<br>
+<button onclick="brush()">texthere</button>
+
+<script>
+  let stamp = document.getElementById("stamp")
+  let pudge = document.getElementById("pudge")
+
+
+  var regex = /,/gi
+  function brush(){
+    let mooby=[]
+
+    for (let i = 0; i <= 9; i++){
+      mooby.push(`
+/* Drop down menu #${i} for attributes */
+.dropdown${i} {
+overflow: hidden;
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content${i} {
+display: none;
+position: fixed;
+background: white;
+z-index: 1;
+}
+
+.dropdown-content${i} button {
+display: inline-block;
+}
+
+.dropdown${i}:hover .dropdown-content${i} {
+display: inline-block;
+}
+
+
+.dropbottom${i} {
+overflow: hidden;
+position: relative;
+display: inline-block;
+}
+
+.dropbottom-content${i} {
+display: none;
+position: fixed;
+background: white;
+z-index: 1;
+}
+
+.dropbottom-content${i} button {
+display: inline-block;
+}
+
+.dropbottom${i}:hover .dropbottom-content${i} {
+display: block;
+}
+
+`)
+
+    }
+
+    stamp.value = mooby.join("\n")
+  }
+
+
+</script>

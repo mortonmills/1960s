@@ -12,6 +12,8 @@
 <li>Snippets Manager</li></a>
 <a href="https://1960s.github.io/manager-bookmarks/">    
 <li>Bookmarks Manager</li></a>
+<a href="https://1960s.github.io/manager-bookmarks/html/file-merger.html">    
+<li>File Merger</li></a>
 <a href="https://1960s.github.io/manager-snippets/text-converter.html">    
 <li>Text Converter</li></a>
 

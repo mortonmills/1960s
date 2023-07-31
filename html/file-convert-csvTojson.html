@@ -1,0 +1,92 @@
+<input id="fileInput" type="file">
+<button id="fileCSV">Convert CSV to JS Object</button>
+<span id="test"></span>
+
+<script>
+  //console.time()
+  //console.timeEnd()
+  console.clear()
+  console.log("test")
+
+
+  function test(){
+
+    //GETTING CSV FILES
+    let fileCSV = document.getElementById("fileCSV")
+    let fileInput = document.getElementById("fileInput")
+
+    fileCSV.addEventListener('click', async function(){ 
+      let csvStr = await handleFiles(fileInput)
+      let csvData = fileConverter(csvStr)
+      let test = document.getElementById("test")
+      test = csvData
+    });
+
+
+    async function handleFiles(input) {
+
+      let mergedFiles;
+      let reader = new FileReader()
+      reader.readAsText(input.files[0])
+      mergedFiles = await new Promise((resolve,reject)=>{
+        reader.addEventListener('load', (e)=>{
+          resolve(e.target.result);
+        });
+      });
+      return mergedFiles
+    }
+
+
+
+    //FILE CONVERSION
+    function fileConverter(csvFile){
+
+      //breaking down CSV
+      //splitting page content to lines
+
+      let arr1 = csvFile.split("\n")
+      console.log(arr1)
+
+      //splitting line content to items
+      let arr2 = []
+      arr1.forEach((el) => {
+
+        arr2.push(el.split("\t"))
+      })
+      console.log(arr2)
+
+
+      //building up JS Object
+      csvData = []
+      //title headings are in 0, so start on 1
+      for (let i = 1; i < arr2.length; i++) {
+
+        let musicObj = {}
+        for (let j = 0; j < arr2[i].length; j++) {
+          //headings are in 0, ex."artist" and "song"
+          musicObj[arr2[0][j]] = arr2[i][j]
+        }
+
+
+        csvData.push(musicObj)
+      }
+
+      console.log(csvData)
+      return csvData
+    }
+
+
+
+  }
+  test()
+</script>
+
+
+
+
+
+
+
+
+
+
