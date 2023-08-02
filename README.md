@@ -12,9 +12,9 @@
 <li>Snippets Manager</li></a>
 <a href="https://1960s.github.io/manager-bookmarks/">    
 <li>Bookmarks Manager</li></a>
-<a href="https://1960s.github.io/manager-bookmarks/html/file-merger.html">    
+<a href="https://1960s.github.io/1960s/html/file-merger.html">    
 <li>File Merger</li></a>
-<a href="https://1960s.github.io/manager-snippets/text-converter.html">    
+<a href="https://1960s.github.io/1960s/html/text-converter.html">    
 <li>Text Converter</li></a>
 
 </ul>
