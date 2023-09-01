@@ -90,3 +90,10 @@ function showMe() {
         document.getElementById("test").style.display = "block"
     }
 }
+
+
+Don't use typeof
+NaN is a number? typeof ("a" * 1) === "number"
+
+
+
