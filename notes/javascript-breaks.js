@@ -20,6 +20,20 @@ how to handle empty arrays in javavscript
 [].push() = 0
 
 
+
+
+TERNARY OPERATOR QUESTION
+why is conditional failing to execute
+let str = "str"
+/[0 - 9]/.test(str[0])
+? true
+: false
+
+
+
+
+
+
 where do promises and await reset out block statements?
 if statements vs functions vs for loops
 
