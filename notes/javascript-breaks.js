@@ -29,8 +29,10 @@ let str = "str"
 ? true
 : false
 
-
-
+WHEN SWITCHING TO THE NEGATION TYPE
+common error when switchin got negation type instead of postive equivalency
+can forget to change || to &&
+1 !== z || 2 !== z 
 
 
 
