@@ -75,6 +75,9 @@ recreation-sports-basketball //category
 //variable definition for scripts seperate from execution
 
 
+Using homogenous arrays for peformance [1,2,3,4,]
+
+
 keeping all functions in one file
 place an index at the top of the page
 index can then be used to export functions
@@ -93,10 +96,10 @@ function2here,
 //*/
 
 
-
-
-
-
++ to add strings
+.repeat to multiply strings
+.replace to subtract strings
+.split to divide strings
 
 
 
@@ -303,7 +306,11 @@ I spy...
 ---
 
 
-
+JOKE BOOK REGEX
+title: Simplify your Life with Regular Expressions or Regex
+picture is:
+/^(([^<>()[\]\\.,;:\s@\"]+(\.[@\"]+)*)|(\\1,3}+[)$/;
+apply code to title of book for secret message
 
 
 
