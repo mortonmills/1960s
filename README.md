@@ -8,22 +8,22 @@
 <a href="#">    <li>Project Manager</li></a>
 <a href="#">    <li>Task Manager</li></a>
   -->
-<a href="https://1960s.github.io/manager-snippets/">    
+<a href="https://mortonmills.github.io/manager-snippets/">    
 <li>Snippets Manager</li></a>
-<a href="https://1960s.github.io/manager-bookmarks/">    
+<a href="https://mortonmills.github.io/manager-bookmarks/">    
 <li>Bookmarks Manager</li></a>
-<a href="https://1960s.github.io/1960s/html/file-merger.html">    
+<a href="https://mortonmills.github.io/mortonmills/html/file-merger.html">    
 <li>File Merger</li></a>
-<a href="https://1960s.github.io/1960s/html/text-converter.html">    
+<a href="https://mortonmills.github.io/mortonmills/html/text-converter.html">    
 <li>Text Converter</li></a>
 
 </ul>
 
  <li>Code Editor</li>
 <ul>
-<a href="https://1960s.github.io/editor-devsand6">    
+<a href="https://mortonmills.github.io/editor-devsand6">    
 <li>Devsand6</li></a>
-<a href="https://1960s.github.io/editor-devsand5">    
+<a href="https://mortonmills.github.io/editor-devsand5">    
 <li>Devsand5</li></a>
   <!--
 <a href="#">    <li>Monaco</li></a>
@@ -32,13 +32,13 @@
 
 <li>Music</li>
 <ul>
-<a href="https://1960s.github.io/music-youtube-api/youtube-maker">    
+<a href="https://mortonmills.github.io/music-youtube-api/youtube-maker">    
 <li>Get Youtube Playlist Data</li></a>
 </ul>
 
 <li>Archived</li>
 <ul>
-<a href="https://1960s.github.io/diydomebuilders/">    
+<a href="https://mortonmills.github.io/diydomebuilders/">    
 <li>diydomebuilders</li></a>
 </ul>
 
@@ -69,9 +69,9 @@
 <hr>
 
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=1960s&show_icons=true&locale=en&layout=compact" alt="1960s" /></p>
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=mortonmills&show_icons=true&locale=en&layout=compact" alt="mortonmills" /></p>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=1960s&show_icons=true&locale=en" alt="1960s" /></p>
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=mortonmills&show_icons=true&locale=en" alt="mortonmills" /></p>
 
 
 
