@@ -54,10 +54,10 @@
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> 
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> 
 <a href="https://www.midi.org/" target="_blank" rel="noreferrer"> <img src="images/midi-logo.svg" alt="midi" width="40" height="40"/> </a> 
-<a href="https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html" target="_blank" rel="noreferrer"> 
+<!-- <a href="https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html" target="_blank" rel="noreferrer"> 
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> 
 <a href="https://www.clojure.org/" target="_blank" rel="noreferrer"> 
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/clojure/clojure-original.svg" alt="clojure" width="40" height="40"/> </a> 
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/clojure/clojure-original.svg" alt="clojure" width="40" height="40"/> </a>  -->
 
 
 <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="git" width="40" height="40"/> </a> 
@@ -69,9 +69,9 @@
 <hr>
 
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=mortonmills&show_icons=true&locale=en&layout=compact" alt="mortonmills" /></p>
+<!-- <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=mortonmills&show_icons=true&locale=en&layout=compact" alt="mortonmills" /></p>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=mortonmills&show_icons=true&locale=en" alt="mortonmills" /></p>
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=mortonmills&show_icons=true&locale=en" alt="mortonmills" /></p> -->
 
 
 
