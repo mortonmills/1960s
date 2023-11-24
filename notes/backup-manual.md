@@ -23,9 +23,10 @@
     - This was the default command for the launcher:   
       ```chromium-browser %U```
     - To make smaller use this command:     
-
+    - `chromium-browser --force-device-scale-factor=1.25 %U`
     - You will want to right click and open properties, go down to bottom and select edit this item.
     - Then go to the command area put in the command.
+    - https://superuser.com/questions/1116767/chrome-ui-size-zoom-levels-in-ubuntu-16-04/1120078#1120078
   - disabled tab hover cards at this address:
   - `chrome://flags/#tab-hover-cards`
   - import bookmarks into chromium
