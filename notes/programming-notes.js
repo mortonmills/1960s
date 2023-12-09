@@ -314,3 +314,67 @@ apply code to title of book for secret message
 
 
 
+
+
+
+
+OLD PROBLEMS
+
+
+PROBLEM
+page was reloading on button click, 
+thought a previous event to delete node was still activating 
+SOLUTION
+button was actually causing form to send, 
+as any button by default will cause form to send
+either prevent default or add an event to button
+
+PROBLEM
+    querySelectorAll(".deleteTrack").forEach(x=>{
+      x.addEventListener("click", (event) => event.target.parentNode.remove())
+    })
+SOLUTION
+document.querySelectorAll(".deleteTrack").forEach(x=>{
+      x.addEventListener("click", (event) => event.target.parentNode.remove())
+    })   
+
+PROBLEM
+tried to use checkbox on the track divs to send form data but only sends on values, 
+no off or false value is sent
+problem becausing using parallel arrays
+attempted to use range inputs instead with only two values,
+but range input cannot be resized
+SOLUTION
+trackOn key sends the checkbox on values then,
+    delete formDataMidi.trackOn
+    let trackOn = Array.from(document.querySelectorAll(".tracks").values()).map(x=>x.checked)
+    formDataMidi.trackOn = trackOn
+
+PROBLEM
+adding event listeners was not working
+SOLUTION
+when button ids where in form, adding the event handlers after worked because,
+form was being reset with the tracks,
+ex, form.innerHTML += trackdata
+if ids were outside of form, event handlers could be added anywhere,
+final fix
+add the innerHTML str to a node
+and then append the node to the form node
+creating dom nodes instead of innerHTML 
+seems to be faster but is not readable
+
+  let form = document.querySelector("form")
+  let wrapper = document.createElement("div")
+  wrapper.setAttribute("class", "wrapper");
+  wrapper.innerHTML = htmlCode.join("")
+  form.appendChild(wrapper)
+see more here: https://stackoverflow.com/questions/7327056/appending-html-string-to-the-dom
+
+PROBLEM
+when trying to use Blob() was getting numbers as strings
+SOLUTION
+Blob requires an array as a parameter,
+so instead of [1,2,3,4]
+it needs to be [[1,2,3,4]]
+
+
