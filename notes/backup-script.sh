@@ -12,3 +12,15 @@ sudo add-apt-repository ppa:dobey/redshift-daily && sudo apt-get update && sudo 
 # catfish
 # mousepad
 # pandoc
+# stacer
+
+# command line cheatsheet
+# git cheatsheet
+# vscode cheatsheet
+# github cheatsheet
+# regex
+# javascript
+# linux cheatsheet
+# node 
+
+# use links instead saving files
