@@ -13,6 +13,8 @@ script generation
 script design definition and execution
 */
 
+//JavaScript Wrapping in a function 8 times as fast, because global namespace slowdown
+
 
 //conditionals
 a > 0
