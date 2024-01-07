@@ -16,6 +16,7 @@ console.log(a) //why is it 3?
 console.log(1 - - 1) //equals 2
 
 how to handle empty arrays in javavscript
+.push() returns the length of the array
 [].push(0) = 1
 [].push() = 0
 
