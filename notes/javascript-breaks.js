@@ -24,6 +24,8 @@ how to handle empty arrays in javavscript
 
 TERNARY OPERATOR QUESTION
 why is conditional failing to execute
+because the variable definition needs a semicolon
+
 let str = "str"
 /[0 - 9]/.test(str[0])
 ? true

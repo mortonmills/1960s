@@ -1,6 +1,38 @@
 # BACKUP
 
 ---
+## STARTUP
+```bash
+#!/bin/bash
+
+
+redshift -O 2000
+
+sudo rfkill block bluetooth
+#sudo rfkill unblock bluetooth
+chromium-browser %U
+
+```
+
+## BACKUP
+```bash
+#!/bin/bash
+sudo add-apt-repository ppa:dobey/redshift-daily && sudo apt-get update && sudo apt-get install redshift vlc code git gh gtypist vim emacs ghex libreoffice audacity audacious inkscape gimp simplescreenrecorder kolourpaint
+# reaper frescobaldi midieditor catfish-file search mousepad pandoc stacer
+
+# make desktop same as home
+
+# nvm, https://github.com/nvm-sh/nvm
+# node and npm, https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+# npm i zx nodemon jsdoc zx -g
+# kapeli offline docs
+# jsdoc and type inference
+
+# USEFUL COMMANDS
+# convert -resize 120 *.png -set filename:f '%t' '%[filename:f].jpg'
+
+```
+
 
 ## MAIN
 - github
@@ -99,7 +131,7 @@
     - name must be default.svg
 - gimp (raster)
 - simplescreenrecorder
-
+- kolourpaint
 ---
 
 
