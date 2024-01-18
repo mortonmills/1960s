@@ -14,9 +14,13 @@ flowchart TB
 
 Data--->Values & Operator
 
-Values--->Numbers & Strings & Booleans
+Values--->Primitives
 
-Numbers---> Integers & FloatingPoint & Infinity & -Infinity & NaN & BigInt
+Primitives--->Numbers & Strings & Booleans
+
+Numbers---> Integers & FloatingPoint & BigInt
+Numbers----Infinity & -Infinity & NaN
+Booleans---> True & False
 ```
 
 
@@ -37,4 +41,30 @@ Numbers---> Integers & FloatingPoint & Infinity & -Infinity & NaN & BigInt
 | -         | Number | binary   |         |
 | *         |        | ternary  |         |
 | /         |        | binary   |         |
+
+
+
+
+| Column1  | Empty Type     | Column3 | Column4 |
+| -------- | -------------- | ------- | ------- |
+| String   | ""             |         |         |
+| Number   | 0              |         |         |
+| Boolean  | false          |         |         |
+| Array    | []             |         |         |
+| Object   | {}             |         |         |
+| none     | null/undefined |         |         |
+| nonsense | NaN            |         |         |
+
+
+```mermaid
+flowchart TB
+
+Data--->True & False & Empty & Nonsense
+
+True--->Strings & Numbers & Booleans
+
+False---> r[``] & 0 & false
+Empty--->Null & Undefined
+Nonsense--->NaN
+```
 
