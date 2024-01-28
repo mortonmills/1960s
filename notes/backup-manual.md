@@ -21,6 +21,9 @@ sudo add-apt-repository ppa:dobey/redshift-daily && sudo apt-get update && sudo 
 # reaper frescobaldi midieditor catfish-file search mousepad pandoc stacer
 
 # make desktop same as home
+# setup synaptic touchpad
+# https://help.ubuntu.com/community/SynapticsTouchpad
+# change keyboard layout to chromebook
 
 # nvm, https://github.com/nvm-sh/nvm
 # node and npm, https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
