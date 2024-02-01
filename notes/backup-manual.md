@@ -21,9 +21,48 @@ sudo add-apt-repository ppa:dobey/redshift-daily && sudo apt-get update && sudo 
 # reaper frescobaldi midieditor catfish-file search mousepad pandoc stacer
 
 # make desktop same as home
+# https://askubuntu.com/a/222333
+    # - Create a new folder that you want to use as your folder.
+
+    # For example, type mkdir ~/Desktop in a terminal (Ctrl+Alt+T to open one) to create a folder named Desktop in your home directory.
+
+    # - Edit your configuration.
+
+    # - Edit the file ~/.config/user-dirs.dirs. You can do this by opening a terminal, then enter:
+
+    # gedit ~/.config/user-dirs.dirs
+
+    # - Change the entry for XDG_DESKTOP_DIR to your new desktop folder, or add it, if the entry does not exist. After your edit, the file should look like this:
+
+    # XDG_DESKTOP_DIR="$HOME/Desktop"  
+    # XDG_DOWNLOAD_DIR="$HOME/Download"  
+    # XDG_TEMPLATES_DIR="$HOME/Templates"  
+    # XDG_PUBLICSHARE_DIR="$HOME/Public"  
+    # XDG_DOCUMENTS_DIR="$HOME/Documents"  
+    # XDG_MUSIC_DIR="$HOME/Music"  
+    # XDG_PICTURES_DIR="$HOME/Pictures"  
+    # XDG_VIDEOS_DIR="$HOME/Videos"
+
+    # Log out and then log in again and your desktop should show the specified folder.
+
+
+
+
 # setup synaptic touchpad
 # https://help.ubuntu.com/community/SynapticsTouchpad
+# for persisting changes on restart
+# https://askubuntu.com/a/20308
+
 # change keyboard layout to chromebook
+# https://github.com/rgvxsthi/Braswell-EDGAR-Linux-Fixes
+
+
+# setup git client
+# https://docs.github.com/en/authentication/connecting-to-github-with-ssh
+
+
+# setup github with ssh
+# https://docs.github.com/en/authentication/connecting-to-github-with-ssh
 
 # nvm, https://github.com/nvm-sh/nvm
 # node and npm, https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
