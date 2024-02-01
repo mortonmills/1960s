@@ -61,6 +61,14 @@ sudo add-apt-repository ppa:dobey/redshift-daily && sudo apt-get update && sudo 
 # https://docs.github.com/en/authentication/connecting-to-github-with-ssh
 
 
+# sound doesn't work
+# https://itsfoss.com/fix-sound-ubuntu-1304-quick-tip/
+# ```
+# sudo alsa force-reload
+
+# ``` 
+
+
 # setup github with ssh
 # https://docs.github.com/en/authentication/connecting-to-github-with-ssh
 
