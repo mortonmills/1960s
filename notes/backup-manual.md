@@ -68,6 +68,16 @@ sudo add-apt-repository ppa:dobey/redshift-daily && sudo apt-get update && sudo 
 
 # ``` 
 
+# getting loud steady beep when watching audio
+# set alsa base debug fixed problem
+# https://forums.linuxmint.com/viewtopic.php?t=386118
+
+# screen is black after waking from suspend, screensaver also causes to freeze
+# possible solution is to install xscreensaver and will fix
+# sudo apt-get install xscreensaver
+# https://unix.stackexchange.com/questions/442057/ubuntu-18-04-wont-wake-after-screen-lock-and-blank-suspend-sleep
+# https://askubuntu.com/questions/1032633/screen-remains-blank-after-wake-up-from-suspend
+
 
 # setup github with ssh
 # https://docs.github.com/en/authentication/connecting-to-github-with-ssh
