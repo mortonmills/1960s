@@ -53,6 +53,21 @@ sudo add-apt-repository ppa:dobey/redshift-daily && sudo apt-get update && sudo 
 # for persisting changes on restart
 # https://askubuntu.com/a/20308
 
+# persistant changes for triple tap for middle mouse button click
+# open and add file if not already at this location
+# /etc/X11/xorg.conf.d/70-synaptics.conf
+# then add this line
+# synclient TapButton3=2
+# for more information see these links
+
+# https://wiki.archlinux.org/title/Libinput#Button_re-mapping
+# https://wiki.archlinux.org/title/Touchpad_Synaptics
+
+# https://askubuntu.com/questions/130393/how-to-configure-the-touchpad-middle-click/288787#288787
+# https://askubuntu.com/questions/130393/how-to-configure-the-touchpad-middle-click
+# https://unix.stackexchange.com/questions/567974/how-to-make-3-finger-tap-on-touchpad-act-as-middle-mouse-button-for-debian-10-c
+
+
 # change keyboard layout to chromebook
 # https://github.com/rgvxsthi/Braswell-EDGAR-Linux-Fixes
 
