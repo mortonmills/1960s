@@ -72,6 +72,29 @@ sudo add-apt-repository ppa:dobey/redshift-daily && sudo apt-get update && sudo 
 # https://github.com/rgvxsthi/Braswell-EDGAR-Linux-Fixes
 
 
+
+
+
+# in GNOME add dash to panel, merges dock with open applications
+# first download gnome extension manager
+# `sudo apt install gnome-shell-extension-manager`
+
+# once downloaded, open extension manager
+# then browse "dash to panel"
+# change order to from "Popularity" to either "Downloads" or "Recent"
+# download "Dash to Panel" extension
+
+# after that is downloaded, make sure it is enabled in the extension manager
+# then open gnome extensions (different than gnome extension manager)
+# here find the "dash to panel "extension and change settings if desired
+
+# also can add gnome tweaks for customization options
+# `sudo apt install gnome-tweaks`
+
+# https://github.com/home-sweet-gnome/dash-to-panel/wiki/Enable-and-Customize#customize-it
+# https://github.com/home-sweet-gnome/dash-to-panel
+
+
 # setup git client
 # https://docs.github.com/en/authentication/connecting-to-github-with-ssh
 
