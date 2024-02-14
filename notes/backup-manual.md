@@ -117,6 +117,11 @@ sudo add-apt-repository ppa:dobey/redshift-daily && sudo apt-get update && sudo 
 # https://askubuntu.com/questions/1032633/screen-remains-blank-after-wake-up-from-suspend
 
 
+# turn brightness up and down make keyboard shortcut
+# https://discourse.gnome.org/t/screen-brightness-with-keyboard-shorcuts-osd/9005/2
+
+
+
 # setup github with ssh
 # https://docs.github.com/en/authentication/connecting-to-github-with-ssh
 
