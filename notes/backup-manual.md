@@ -237,28 +237,4 @@ sudo add-apt-repository ppa:dobey/redshift-daily && sudo apt-get update && sudo 
 - kolourpaint
 ---
 
-## Games
-Battle brothers
-Into the breach
-Ftl
-Slay the spire
-Darkest dungeon
-
-Civilization VI
-Unity of command 2
-
-Worms
-Tactics ogre
-Triangle strategy
-The talos principle
-Ftl 
-Octopath one and two
-Banner saga
-Fire emblem
-Invisible inc
-Wargroove
-Advance wars
-Civilization
-Hearts of iron and other 4x
-
 
