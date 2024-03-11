@@ -95,6 +95,10 @@ sudo add-apt-repository ppa:dobey/redshift-daily && sudo apt-get update && sudo 
 # https://github.com/home-sweet-gnome/dash-to-panel
 
 
+# addded a 2nd gnome extension to prevent the "window is ready" pop-ups 
+# extension is called NoAnnoyance v2, install from gnome extensions 
+
+
 # setup git client
 # https://docs.github.com/en/authentication/connecting-to-github-with-ssh
 
