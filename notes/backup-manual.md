@@ -73,7 +73,7 @@ sudo add-apt-repository ppa:dobey/redshift-daily && sudo apt-get update && sudo 
 
 
 
-
+ 
 
 # in GNOME add dash to panel, merges dock with open applications
 # first download gnome extension manager
