@@ -72,7 +72,7 @@ sudo add-apt-repository ppa:dobey/redshift-daily && sudo apt-get update && sudo 
 # https://github.com/rgvxsthi/Braswell-EDGAR-Linux-Fixes
 
 
-
+  
  
 
 # in GNOME add dash to panel, merges dock with open applications
