@@ -128,6 +128,10 @@ sudo add-apt-repository ppa:dobey/redshift-daily && sudo apt-get update && sudo 
 
 # setup github with ssh
 # https://docs.github.com/en/authentication/connecting-to-github-with-ssh
+# contains information for startup script for ssh process
+# https://code.visualstudio.com/docs/remote/troubleshooting
+
+
 
 # nvm, https://github.com/nvm-sh/nvm
 # node and npm, https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
