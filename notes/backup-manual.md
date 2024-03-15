@@ -13,7 +13,7 @@ sudo rfkill block bluetooth
 chromium-browser %U
 
 ```
-
+ 
 ## BACKUP
 ```bash
 #!/bin/bash
