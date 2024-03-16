@@ -10,7 +10,7 @@ save mozilla browser settings
 change software update settings
 mate tweaks, change desktop setting to Redmond, put bar on top
 add redshift to startup applications
-mate tweaks can window manager to marco no compositor
+mate tweaks change window manager to "marco no compositor"
     https://askubuntu.com/questions/43875/how-do-i-adjust-the-alt-tab-speed
 turn off blue tooth in startup applications
 install vscode
@@ -18,6 +18,13 @@ create ssh key
 sign in vscode add settings and extensions backup and sync on
 add git config user.name and email
 change home to desktop directory
+remove other media directories
 add horizontal scroll in mouse settings
 in caja, made $HOME default for media video music
     this remove from bookmarks section
+dump setting with dconf, 
+    https://www.addictivetips.com/ubuntu-linux-tips/back-up-the-mate-desktop-settings-linux/
+    dconf dump / > ~/Desktop/dconf-full-backup
+vscode windows opening in background out of focus
+    enable "simple dialog" in vscode settings for functional fix
+    update
